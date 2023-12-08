@@ -21,7 +21,7 @@ public abstract class BaseTest {
 
     @BeforeSuite
     public static void setUpSuite() throws Exception {
-        ReportManager.init("Reports", "Report Group 4");
+        ReportManager.init("Reports", "Rocio Ramirez");
     }
 
     @BeforeMethod
