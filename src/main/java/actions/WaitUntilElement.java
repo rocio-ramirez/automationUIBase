@@ -5,9 +5,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ui.LandingPageUI;
 
 public class WaitUntilElement {
 
+    public static WebElement waitOnElement(WebDriver webDriver,  By locator, Integer timeout) {
+        WebElement element = webDriver.findElement(locator);
+        synchronized (element) {
+            try {
+                element.wait(timeout * 1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+        return element;
+    }
     public static boolean isPresent(WebDriver webDriver, By locator) {
         try {
             WebDriverWait wait = new WebDriverWait(webDriver, 3);
