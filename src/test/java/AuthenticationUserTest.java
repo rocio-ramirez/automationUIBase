@@ -9,13 +9,13 @@ import task.validations.LandingPage;
 
 public class AuthenticationUserTest extends BaseTest {
 
-//    @Test
-//    public void testUserSignUp() {
-//        SignUp.as(webDriver,"rocio.ramirez.ch",
-//                            "SuperSecretPassword!",
-//                            "rocio123@email.com");
-//        Assert.assertTrue(LandingPage.isVisible(webDriver));
-//    }
+    @Test
+    public void testUserSignUp() {
+        SignUp.as(webDriver,"rocio.ramirez.ch",
+                            "SuperSecretPassword!",
+                            "rocio123@email.com");
+        Assert.assertTrue(LandingPage.isVisible(webDriver));
+    }
 
     @Test
     public void testUserLogout() {

@@ -4,8 +4,6 @@ import actions.Click;
 import actions.Enter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import ui.SignUpFormAuthentication;
-import ui.TodoLyHomePageUI;
 import ui.TodoTaskUI;
 
 public class TodoTask {
