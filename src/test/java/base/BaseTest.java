@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeSuite;
 
 public abstract class BaseTest {
     protected WebDriver webDriver;
-    private String url = "https://the-internet.herokuapp.com/";
+    private String url = "https://todo.ly/";
     private String browser = "chrome";
 
 
